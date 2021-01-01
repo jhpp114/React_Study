@@ -1,0 +1,15 @@
+.collectionPreview {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.collection-preview-title {
+    margin-bottom: 0.5rem;
+}
+
+.preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
