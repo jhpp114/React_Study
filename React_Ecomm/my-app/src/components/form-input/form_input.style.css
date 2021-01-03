@@ -1,0 +1,35 @@
+.shrink {
+    top: -14px !important;
+    font-size: 12px !important;
+    color: black !important;
+}
+
+.group {
+    position: relative;
+}
+
+.form-input-tag {
+    outline: none;
+    width: 100%;
+    background: none;
+    background-color: white;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    margin: 25px 0;
+}
+
+input[type="password"] {
+    letter-spacing: 0.3rem;
+}
+
+.form-input-label {
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    color: gray;
+    transition: 300ms ease all;
+}
