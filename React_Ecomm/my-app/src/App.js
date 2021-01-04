@@ -7,7 +7,7 @@ import SignInLogin from './pages/sign-in_log-in/sign_in_log_in.component';
 
 import {Route, Switch, Link} from 'react-router-dom';
 // firebase auth
-import { auth } from './firebase/firebase.util';
+import { auth, createUserProfileDocument } from './firebase/firebase.util';
 
 class App extends Component {
   constructor() {
@@ -20,11 +20,12 @@ class App extends Component {
   unSubscribeFromAuth = null;
 
   componentDidMount() {
-      this.unSubscribeFromAuth = auth.onAuthStateChanged( (user) => {
-      this.setState({
-        currentUser: user
-      });
-      console.log(user);
+      this.unSubscribeFromAuth = auth.onAuthStateChanged( async (user) => {
+      // this.setState({
+      //   currentUser: user
+      // });
+      createUserProfileDocument(user);
+      // console.log(user);
     })
   }
 
