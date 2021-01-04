@@ -2,11 +2,12 @@
     background-color: black;
     color: white;
     padding: 0.5rem 0.8rem;
-    font-size: 18px;
-    width: 30%;
+    font-size: 12px;
+    width: 35%;
     cursor: pointer;
     outline: none;
     border: none;
+    margin: 0.5rem;
 }
 
 .custom-button:hover {
@@ -14,4 +15,8 @@
     color: black;
     outline: none;
     border: 1px solid black;
+}
+
+.googleSignin {
+    background-color: #4285F4;
 }

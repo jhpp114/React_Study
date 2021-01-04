@@ -7,14 +7,21 @@
 }
 
 .logo-container {
-    width: 90%;
+    width: 80%;
 }
 
 .options {
-    width: 10%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.option {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 a {
